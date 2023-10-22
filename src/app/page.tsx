@@ -1,12 +1,16 @@
-import Head from 'next/head'
-
+'use client';
+import Head from 'next/head';
+// import Header from '../../components/Header';
+import { SocialIcon } from 'react-social-icons';
+import { motion } from 'framer-motion';
+import Header from '../../components/Header';
 export default function Home() {
   return (
     <div>
       <Head>
         <title>Home</title>
       </Head>
-      <h1 className='text-red-800'>hello</h1>
+      <Header />
     </div>
-  )
+  );
 }
